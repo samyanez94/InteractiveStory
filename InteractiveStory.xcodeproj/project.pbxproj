@@ -57,9 +57,9 @@
 				2235602A1FCCB9690044D77D /* AppDelegate.swift */,
 				2235602C1FCCB9690044D77D /* ViewController.swift */,
 				2235602E1FCCB9690044D77D /* Main.storyboard */,
-				223560311FCCB9690044D77D /* Assets.xcassets */,
 				223560331FCCB9690044D77D /* LaunchScreen.storyboard */,
 				223560361FCCB9690044D77D /* Info.plist */,
+				223560311FCCB9690044D77D /* Assets.xcassets */,
 			);
 			path = InteractiveStory;
 			sourceTree = "<group>";
