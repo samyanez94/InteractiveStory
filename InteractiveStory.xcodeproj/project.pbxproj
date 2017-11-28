@@ -14,6 +14,7 @@
 		223560351FCCB9690044D77D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223560331FCCB9690044D77D /* LaunchScreen.storyboard */; };
 		2235603D1FCCDF830044D77D /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235603C1FCCDF830044D77D /* Story.swift */; };
 		2235603F1FCCE8C00044D77D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235603E1FCCE8C00044D77D /* Page.swift */; };
+		223560411FCCEEA20044D77D /* Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223560401FCCEEA20044D77D /* Adventure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		223560361FCCB9690044D77D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2235603C1FCCDF830044D77D /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		2235603E1FCCE8C00044D77D /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		223560401FCCEEA20044D77D /* Adventure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				2235602A1FCCB9690044D77D /* AppDelegate.swift */,
-				2235603C1FCCDF830044D77D /* Story.swift */,
+				223560401FCCEEA20044D77D /* Adventure.swift */,
 				2235603E1FCCE8C00044D77D /* Page.swift */,
+				2235603C1FCCDF830044D77D /* Story.swift */,
 				2235602C1FCCB9690044D77D /* ViewController.swift */,
 				2235602E1FCCB9690044D77D /* Main.storyboard */,
 				223560331FCCB9690044D77D /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				2235602D1FCCB9690044D77D /* ViewController.swift in Sources */,
 				2235602B1FCCB9690044D77D /* AppDelegate.swift in Sources */,
 				2235603F1FCCE8C00044D77D /* Page.swift in Sources */,
+				223560411FCCEEA20044D77D /* Adventure.swift in Sources */,
 				2235603D1FCCDF830044D77D /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
