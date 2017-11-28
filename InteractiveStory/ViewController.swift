@@ -19,4 +19,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "StartAdventure" {
+            guard let pageController = segue.destination as? PageController else {
+                return
+            }
+            pageController.page = Adventure.story
+        }
+    }
 }
