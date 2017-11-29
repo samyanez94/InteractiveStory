@@ -28,13 +28,25 @@
                                     <segue destination="vSQ-bZ-3zd" kind="show" identifier="StartAdventure" id="uWR-3q-W1m"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vTK-Q5-Qua">
+                                <rect key="frame" x="24" y="519" width="327" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Fu1-YE-tyr"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="vTK-Q5-Qua" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="5o9-rd-wO9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lId-7F-g06" secondAttribute="trailing" id="70x-o5-fek"/>
+                            <constraint firstItem="7J8-XZ-VyP" firstAttribute="top" secondItem="vTK-Q5-Qua" secondAttribute="bottom" constant="40" id="91j-7f-zTp"/>
                             <constraint firstItem="lId-7F-g06" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bod-d4-sdR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7J8-XZ-VyP" secondAttribute="bottom" constant="48" id="NGQ-rW-JNO"/>
                             <constraint firstItem="lId-7F-g06" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PQM-ju-D0j"/>
+                            <constraint firstItem="vTK-Q5-Qua" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pfh-Uq-Y40"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lId-7F-g06" secondAttribute="bottom" id="VoU-yt-YwH"/>
                             <constraint firstItem="lId-7F-g06" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="a6a-Kn-Caj"/>
                             <constraint firstItem="7J8-XZ-VyP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tSn-gK-7Xp"/>
@@ -42,6 +54,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="REq-RG-KBm"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="vTK-Q5-Qua" id="7LK-a6-rYk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
