@@ -8,36 +8,10 @@
 
 import UIKit
 
-extension NSAttributedString {
-    var stringRange: NSRange {
-        return NSMakeRange(0, length)
-    }
-}
-
-extension Story {
-    var attributedText: NSAttributedString {
-        let attributedString = NSMutableAttributedString(string: text)
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 10
-        attributedString.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: attributedString.stringRange)
-        
-        return attributedString
-    }
-}
-
-extension Page {
-    func story(attributed: Bool) -> NSAttributedString {
-        if attributed {
-            return story.attributedText
-        } else {
-            return NSAttributedString(string: story.text)
-        }
-    }
-}
-
 class PageController: UIViewController {
     
     var page: Page?
+    let soundEffectsPlayer = SoundEffectsPlayer()
     
     // MARK: - User Interface Properties
     
@@ -123,6 +97,8 @@ class PageController: UIViewController {
             let nextPage = firstChoice.page
             let pageController = PageController(page: nextPage)
             
+            soundEffectsPlayer.playSound(for: nextPage.story)
+            
             navigationController?.pushViewController(pageController, animated: true)
         }
     }
@@ -132,11 +108,40 @@ class PageController: UIViewController {
             let nextPage = secondChoice.page
             let pageController = PageController(page: nextPage)
             
+            soundEffectsPlayer.playSound(for: nextPage.story)
+            
             navigationController?.pushViewController(pageController, animated: true)
         }
     }
     
     @objc func playAgain() {
         navigationController?.popToRootViewController(animated: true)
+    }
+}
+
+extension NSAttributedString {
+    var stringRange: NSRange {
+        return NSMakeRange(0, length)
+    }
+}
+
+extension Story {
+    var attributedText: NSAttributedString {
+        let attributedString = NSMutableAttributedString(string: text)
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 10
+        attributedString.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: attributedString.stringRange)
+        
+        return attributedString
+    }
+}
+
+extension Page {
+    func story(attributed: Bool) -> NSAttributedString {
+        if attributed {
+            return story.attributedText
+        } else {
+            return NSAttributedString(string: story.text)
+        }
     }
 }

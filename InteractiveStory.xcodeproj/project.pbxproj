@@ -16,6 +16,10 @@
 		2235603F1FCCE8C00044D77D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235603E1FCCE8C00044D77D /* Page.swift */; };
 		223560411FCCEEA20044D77D /* Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223560401FCCEEA20044D77D /* Adventure.swift */; };
 		223560431FCCF9CF0044D77D /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223560421FCCF9CF0044D77D /* PageController.swift */; };
+		2243D22E1FCF550D00D53B2D /* PageTurn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2243D22B1FCF550C00D53B2D /* PageTurn.wav */; };
+		2243D22F1FCF550D00D53B2D /* HappyEnding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2243D22C1FCF550C00D53B2D /* HappyEnding.wav */; };
+		2243D2301FCF550D00D53B2D /* Ominous.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2243D22D1FCF550D00D53B2D /* Ominous.wav */; };
+		2243D2321FCF557500D53B2D /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243D2311FCF557500D53B2D /* Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		2235603E1FCCE8C00044D77D /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		223560401FCCEEA20044D77D /* Adventure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventure.swift; sourceTree = "<group>"; };
 		223560421FCCF9CF0044D77D /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		2243D22B1FCF550C00D53B2D /* PageTurn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PageTurn.wav; sourceTree = "<group>"; };
+		2243D22C1FCF550C00D53B2D /* HappyEnding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HappyEnding.wav; sourceTree = "<group>"; };
+		2243D22D1FCF550D00D53B2D /* Ominous.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ominous.wav; sourceTree = "<group>"; };
+		2243D2311FCF557500D53B2D /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,14 +74,26 @@
 				223560401FCCEEA20044D77D /* Adventure.swift */,
 				2235603E1FCCE8C00044D77D /* Page.swift */,
 				2235603C1FCCDF830044D77D /* Story.swift */,
+				2243D2311FCF557500D53B2D /* Audio.swift */,
 				2235602C1FCCB9690044D77D /* ViewController.swift */,
 				223560421FCCF9CF0044D77D /* PageController.swift */,
 				2235602E1FCCB9690044D77D /* Main.storyboard */,
 				223560331FCCB9690044D77D /* LaunchScreen.storyboard */,
 				223560361FCCB9690044D77D /* Info.plist */,
+				2243D22A1FCF54F100D53B2D /* Resources */,
 				223560311FCCB9690044D77D /* Assets.xcassets */,
 			);
 			path = InteractiveStory;
+			sourceTree = "<group>";
+		};
+		2243D22A1FCF54F100D53B2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2243D22C1FCF550C00D53B2D /* HappyEnding.wav */,
+				2243D22D1FCF550D00D53B2D /* Ominous.wav */,
+				2243D22B1FCF550C00D53B2D /* PageTurn.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +157,10 @@
 			files = (
 				223560351FCCB9690044D77D /* LaunchScreen.storyboard in Resources */,
 				223560321FCCB9690044D77D /* Assets.xcassets in Resources */,
+				2243D22F1FCF550D00D53B2D /* HappyEnding.wav in Resources */,
+				2243D22E1FCF550D00D53B2D /* PageTurn.wav in Resources */,
 				223560301FCCB9690044D77D /* Main.storyboard in Resources */,
+				2243D2301FCF550D00D53B2D /* Ominous.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +177,7 @@
 				2235603F1FCCE8C00044D77D /* Page.swift in Sources */,
 				223560411FCCEEA20044D77D /* Adventure.swift in Sources */,
 				2235603D1FCCDF830044D77D /* Story.swift in Sources */,
+				2243D2321FCF557500D53B2D /* Audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
