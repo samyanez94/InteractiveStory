@@ -10,7 +10,7 @@ import UIKit
 
 extension NSAttributedString {
     var stringRange: NSRange {
-        return NSMakeRange(0, self.length)
+        return NSMakeRange(0, length)
     }
 }
 
@@ -47,7 +47,7 @@ class PageController: UIViewController {
         imageView.image = self.page?.story.artwork
         return imageView
     }()
-    lazy var storyLabel: UILabel  = {
+    lazy var storyLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.attributedText = self.page?.story(attributed: true)
@@ -71,7 +71,7 @@ class PageController: UIViewController {
         button.addTarget(self, action: #selector(PageController.loadSecondChoice), for: .touchUpInside)
         return button
     }()
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -80,7 +80,7 @@ class PageController: UIViewController {
         self.page = page
         super.init(nibName: nil, bundle: nil)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -107,13 +107,13 @@ class PageController: UIViewController {
         NSLayoutConstraint.activate([
             firstChoiceButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             firstChoiceButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -80.0)
-            ])
+        ])
         // Second choice button
         view.addSubview(secondChoiceButton)
         NSLayoutConstraint.activate([
             secondChoiceButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             secondChoiceButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32)
-            ])
+        ])
     }
     
     // MARK: - Helper methods

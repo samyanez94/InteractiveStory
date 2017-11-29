@@ -9,15 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet var nameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow), name: Notification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillHide), name: Notification.Name.UIKeyboardWillHide, object: nil)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -79,4 +79,5 @@ extension ViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
 }

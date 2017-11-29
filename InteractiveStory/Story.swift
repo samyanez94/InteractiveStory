@@ -34,7 +34,7 @@ extension Story {
         case .home: return #imageLiteral(resourceName: "Home")
         }
     }
-    
+
     var text: String {
         switch self {
         case .returnTrip(let name):
