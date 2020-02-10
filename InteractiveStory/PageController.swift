@@ -21,6 +21,7 @@ class PageController: UIViewController {
         imageView.image = self.page?.story.artwork
         return imageView
     }()
+    
     lazy var storyLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -29,6 +30,7 @@ class PageController: UIViewController {
         label.numberOfLines = 0
         return label
     }()
+    
     lazy var firstChoiceButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -38,6 +40,7 @@ class PageController: UIViewController {
         button.addTarget(self, action: selector, for: .touchUpInside)
         return button
     }()
+    
     lazy var secondChoiceButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
